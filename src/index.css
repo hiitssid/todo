@@ -1,0 +1,104 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Open Sans", sans-serif;
+}
+body {
+  width: 350px;
+  margin: 0 auto;
+  background-color: #a6b1e1;
+}
+.wrapper {
+  margin-top: 2rem;
+  width: 100%;
+  max-width: 960px;
+  /* margin: 0 auto; */
+}
+
+form {
+  /* outline: 1px solid lime; */
+  display: flex;
+  /* flex-direction: column; */
+  justify-content: center;
+  align-items: center;
+  gap: 0.3rem;
+}
+form input {
+  width: 90%;
+  padding: 0.9rem;
+  border: none;
+  font-size: 1rem;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+}
+form input:focus {
+  outline: none;
+}
+form input,
+textarea {
+  background-color: #dcd6f7;
+}
+form button {
+  padding: 0.9rem;
+  width: 30%;
+  background-color: #424874;
+  color: #fff;
+  font-size: 1rem;
+  border: none;
+  outline: none;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+  cursor: pointer;
+}
+
+/* bigger than 480px */
+@media screen and (min-width: 480px) {
+  .wrapper {
+    margin-top: 5rem;
+  }
+  form {
+    flex-direction: row;
+  }
+  form input {
+    width: 320px;
+  }
+}
+
+/* CARD STYLES */
+.card-wrapper {
+  margin: 1rem 0;
+  background-color: #f4eeff;
+  padding: 0.5rem;
+  border-radius: 5px;
+}
+
+.card {
+  background-color: #dcd6f7;
+  padding: 1rem;
+  margin-bottom: 0.5rem;
+  border-radius: 5px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  outline: none;
+}
+
+.card:active {
+  background-color: #a6b1e1;
+}
+
+.card:last-child {
+  margin-bottom: 0;
+}
+
+.card-icon {
+  font-size: 1.5rem;
+  position: absolute;
+  right: -45px;
+  color: #f4eeff;
+  border-radius: 15px;
+  cursor: pointer;
+}
