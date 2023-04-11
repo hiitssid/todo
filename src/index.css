@@ -1,4 +1,12 @@
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap");
+:root{
+  --primary : #424874;
+  --secondary: #dcd6f7;
+  --ternary: #f4eeff;
+  --bg:#a6b1e1;
+  --grey:#D8D8D8;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -8,7 +16,7 @@
 body {
   width: 350px;
   margin: 0 auto;
-  background-color: #a6b1e1;
+  background-color: var(--bg);
 }
 .wrapper {
   margin-top: 2rem;
@@ -38,12 +46,12 @@ form input:focus {
 }
 form input,
 textarea {
-  background-color: #dcd6f7;
+  background-color: var(--secondary);
 }
 form button {
   padding: 0.9rem;
   width: 30%;
-  background-color: #424874;
+  background-color: var(--primary);
   color: #fff;
   font-size: 1rem;
   border: none;
@@ -66,39 +74,3 @@ form button {
   }
 }
 
-/* CARD STYLES */
-.card-wrapper {
-  margin: 1rem 0;
-  background-color: #f4eeff;
-  padding: 0.5rem;
-  border-radius: 5px;
-}
-
-.card {
-  background-color: #dcd6f7;
-  padding: 1rem;
-  margin-bottom: 0.5rem;
-  border-radius: 5px;
-  position: relative;
-  display: flex;
-  align-items: center;
-  cursor: pointer;
-  outline: none;
-}
-
-.card:active {
-  background-color: #a6b1e1;
-}
-
-.card:last-child {
-  margin-bottom: 0;
-}
-
-.card-icon {
-  font-size: 1.5rem;
-  position: absolute;
-  right: -45px;
-  color: #f4eeff;
-  border-radius: 15px;
-  cursor: pointer;
-}

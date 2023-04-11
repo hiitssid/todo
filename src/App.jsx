@@ -28,12 +28,13 @@ export default function App() {
     localStorage.setItem(localStorageKey, JSON.stringify(list));
   }, [list]);
 
-  const card = list.map((item) => {
-    return <Card key={item.id} todo={item} handleClick={deleteClick} />;
+  const card = list.map((item, index) => {
+    return <Card key={index} todo={item} handleClick={()=>deleteClick(item)} />;
   });
 
-  function deleteClick() {
-    console.log("delete");
+  function deleteClick(item) {
+    const newList = list.filter((itemfromList => itemfromList !==item))
+    setList(newList)
   }
 
   return (
