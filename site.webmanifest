@@ -1,0 +1,11 @@
+{
+    "name": "Madatory TODO",
+    "short_name": "Madatory",
+    "icons":
+        [
+            {"src":"/public/icon192.png","sizes":"192x192","type":"image/png"},{"src":"/public/icon512.png","sizes":"512x512","type":"image/png"}
+        ],
+    "theme_color": "#dcd6f7",
+    "background_color": "#dcd6f7",
+    "display": "standalone"
+}
