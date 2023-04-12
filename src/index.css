@@ -73,4 +73,10 @@ form button {
     width: 320px;
   }
 }
+/* smaller screen below 320px */
+@media screen and (max-width: 320px){
+  body{
+    width: 280px;
+  }
+}
 
